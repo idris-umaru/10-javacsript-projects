@@ -1,0 +1,88 @@
+/*Style for the calculator appP*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 40px;
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+
+}
+
+.calculator {
+  background-color: #fff;
+  margin-top: 65px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.calculator-screen {
+  width: calc(100% - 20px);
+  padding: 15px ;
+  font-size: 29px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  text-align: right;
+  background-color: #f9f9f9;
+}
+
+.calculator-keys {
+  display: grid;
+  font-size: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+button{
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #e0e0e0;
+   cursor: pointer;
+   background-color: #e0e0e0;
+   transition: backgriund-color 0.2s;
+   margin: 5px;
+
+}
+button:hover{
+    background-color: #e0e0e0;
+}
+.operator{
+    background-color: #ff9500;
+    color: white;
+}
+.operator:hover{
+    background-color: #e08500;
+}
+.equal-sign{
+    background-color:#1c8b20; 
+    grid-column: 4;
+}
+
+.equal-sign:hover{
+    background-color: #45a049;
+}
+.all-clear{
+    background-color:  #f44336;
+    color: white;
+}
+.all-clear:hover{
+    background-color: #da190b;
+}
