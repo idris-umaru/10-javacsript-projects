@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing game App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Guessing Game</h1>
+        <p>Guess a number between 1 and 100</p>
+      </div>
+      <div class="game">
+        <label for="guessInput">Your guess:</label>
+        <input
+          type="number"
+          id="guessInput"
+          placeholder="Enter your guess"
+          min="1"
+          max="100"
+          autocomplete="off"
+        />
+        <button id="submitGuess">Submit Guess</button>
+        <p id="feedback"></p>
+        <p id="attempts">Attempts: 0</p>
+        <button id="restartGame" class="hidden">Restart Game</button>
+      </div>
+    </div>
+    <script src="Guess.js"></script>
+  </body>
+</html>
