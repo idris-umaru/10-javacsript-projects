@@ -8,59 +8,59 @@ These projects are perfect for demonstrating growth on GitHub and building a str
 
 ## 📂 Project List
 
-### ✅ 01. Calculator 🧮
+### ✅ 01. Calculator 
 A simple calculator that can perform addition, subtraction, multiplication, and division.  
-**Key concepts:** Input/output, event listeners, functions, type conversion.  
-**Status:** Completed
+Key concepts: Input/output, event listeners, functions, type conversion.  
+Status: Completed
 
-### 🔜 02. Number Guessing Game 🎯
+### 🔜 02. Number Guessing Game 
 Guess a random number between 1 and 10. Provides feedback if the guess is too high or too low.  
-**Key concepts:** `Math.random()`, conditionals, DOM updates, input validation.  
-**Status:** Coming Soon
+Key concepts: `Math.random()`, conditionals, DOM updates, input validation.  
+Status: Completed 
 
-### 🔜 03. Todo List App 📝
+### 🔜 03. Todo List App 
 A basic task manager where you can add, view, and delete tasks.  
-**Key concepts:** Arrays, DOM manipulation, events, loops.  
-**Status:** Coming Soon
+Key concepts: Arrays, DOM manipulation, events, loops.  
+Status: Coming Soon
 
-### 🔜 04. Counter App ➕➖
+### 🔜 04. Counter App 
 Increment or decrement a counter with buttons, including a reset feature.  
 **Key concepts:** Variables, state management, event listeners, DOM updates.  
-**Status:** Coming Soon
+Status: Coming Soon
 
-### 🔜 05. Form Validation App 📋
+### 🔜 05. Form Validation App 
 Validates user input for forms, ensuring proper values are entered before submission.  
-**Key concepts:** Forms, validation, event handling, error messages.  
-**Status:** Coming Soon
+Key concepts: Forms, validation, event handling, error messages.  
+Status: Coming Soon
 
-### 🔜 06. Password Strength Checker 🔐
+### 🔜 06. Password Strength Checker 
 Checks the strength of a password and gives feedback (weak, medium, strong).  
-**Key concepts:** Strings, conditionals, real-time input handling.  
-**Status:** Coming Soon
+Key concepts: Strings, conditionals, real-time input handling.  
+Status: Coming Soon
 
-### 🔜 07. Random Quote Generator 💬
+### 🔜 07. Random Quote Generator 
 Displays a random quote with the author's name every time a button is clicked.  
-**Key concepts:** Arrays of objects, randomness, DOM updates, events.  
+Key concepts: Arrays of objects, randomness, DOM updates, events.  
 **Status:** Coming Soon
 
-### 🔜 08. Fruit Basket App 🍎
+### 🔜 08. Fruit Basket App 
 Add fruits to a basket, view the basket, and count total items.  
-**Key concepts:** Arrays, push/remove, display data.  
-**Status:** Coming Soon
+Key concepts: Arrays, push/remove, display data.  
+Status: Coming Soon
 
-### 🔜 09. Simple Quiz App ❓
+### 🔜 09. Simple Quiz App 
 A mini quiz app with multiple questions and score tracking.  
-**Key concepts:** Objects, conditional logic, flow control, score tracking.  
-**Status:** Coming Soon
+Key concepts: Objects, conditional logic, flow control, score tracking.  
+Status: Coming Soon
 
-### 🔜 10. Expense Tracker 💰
+### 🔜 10. Expense Tracker 
 Track expenses by adding name and amount, display all expenses and total amount.  
-**Key concepts:** Arrays of objects, calculations, DOM updates.  
-**Status:** Coming Soon
+Key concepts: Arrays of objects, calculations, DOM updates.  
+Status: Coming Soon
 
 ---
 
-## ⚡ Technologies Used
+##  Technologies Used
 
 - HTML5
 - CSS3
@@ -70,7 +70,7 @@ Track expenses by adding name and amount, display all expenses and total amount.
 
 ---
 
-## 📌 How to Run
+##  How to Run
 
 1. Clone the repository:
 ```bash
@@ -86,7 +86,7 @@ cd 10-javacsript-projects/calculator-app
 
 ---
 
-## 🎯 Learning Goals
+## Learning Goals
 
 - Master JavaScript fundamentals
 - Build real-world projects from scratch
@@ -95,7 +95,7 @@ cd 10-javacsript-projects/calculator-app
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Idris Umaru**  
 [GitHub Profile](https://github.com/idris-umaru)
