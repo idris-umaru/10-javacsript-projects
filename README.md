@@ -13,7 +13,7 @@ A simple calculator that can perform addition, subtraction, multiplication, and 
 Key concepts: Input/output, event listeners, functions, type conversion.  
 Status: Completed
 
-### 🔜 02. Number Guessing Game 
+### ✅ 02. Number Guessing Game 
 Guess a random number between 1 and 10. Provides feedback if the guess is too high or too low.  
 Key concepts: `Math.random()`, conditionals, DOM updates, input validation.  
 Status: Completed 
