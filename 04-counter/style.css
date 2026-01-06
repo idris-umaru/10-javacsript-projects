@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+ } 
+.counter-container{
+        max-width: 400px;
+        width: 100%;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px  40px rgba(0,0,0,0.3);
+        text-align: center;
+    }
+.header{
+    margin-bottom: 30px;
+
+
+}
+.header h1{
+    font-size: 2.5rem;
+    color:  #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+
+}
+.header p {
+    font-size: 1rem;
+    color:#666;
+}
+.counter-display{
+    padding: 20px;
+    margin: 15px;
+    background: linear-gradient(135deg, #667eea, #764ba2 100%);
+    border-radius: 15px;
+}
+.counter-value{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+.counter-value.animate{
+    transform: scale(1.2);
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btn{
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    
+}
+.btn:hover{
+    transform: translate(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+
+}
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-increment {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+}
+
+.btn-increment:hover {
+    background: linear-gradient(135deg, #0e8074 0%, #2fd46a 100%);
+}
+
+.btn-decrement {
+    background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+    color: white;
+}
+
+.btn-decrement:hover {
+    background: linear-gradient(135deg, #d12d40 0%, #e04a37 100%);
+}
+
+.btn-reset {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+.btn-reset:hover {
+    background: linear-gradient(135deg, #e07de9 0%, #e3455a 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .counter-container {
+        padding: 30px 20px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .counter-value {
+        font-size: 4rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-increment {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+}
+
+.btn-increment:hover {
+    background: linear-gradient(135deg, #0e8074 0%, #2fd46a 100%);
+}
+
+.btn-decrement {
+    background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+    color: white;
+}
+
+.btn-decrement:hover {
+    background: linear-gradient(135deg, #d12d40 0%, #e04a37 100%);
+}
+
+.btn-reset {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+.btn-reset:hover {
+    background: linear-gradient(135deg, #e07de9 0%, #e3455a 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .counter-container {
+        padding: 30px 20px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .counter-value {
+        font-size: 4rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
