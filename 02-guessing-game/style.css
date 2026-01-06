@@ -43,15 +43,15 @@ body {
     flex-direction: column;
     gap:15px;
 }
-#guess-input{
+#guessInput{
     padding:20px;
     font-size:18px;
-    border:2px solid #ddd;
+    border: 5px solid #ddd;
     border-radius:8px;
     text-align: center;
     transition: border-color 0.3s;
 }
-#guess-input:focus{
+#guessInput:focus{
     outline: none;
     border-color: #667eea;
 
@@ -76,7 +76,51 @@ button:active{
     transform: translate(0);
 }
 
+
 #resartGame{
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     margin-top: 20px;
+}
+#resartGame:hover{
+    box-shadow: 0 5px 15px rgba(245, 87, 108, 0.4);
+}
+#feedback{
+    font-size: 1.2rem;
+    font-weight:bold;
+    min-height: 30px;
+    padding:10px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+#feedback.correct{
+    color:#27ae60;
+    background-color: #d4edda;
+}
+#feedback.success{
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+#feedback.wrong{
+    color: #e74c3c;
+    background-color: #f8d7da;
+}
+#feedback.hint{
+    color:#f39c12;
+    background-color: #fff3cd;
+
+}
+#attempts{
+    color:#555;
+    font-size: 1rem;
+    font-weight: 500;
+}
+/*Responsive Design */
+@media (max-width: 600px){
+    .container{
+        padding: 30px 20px;
+    }
+    .header h1 {
+        font-size: 1.5rem;
+    }
 }
