@@ -18,10 +18,10 @@ Guess a random number between 1 and 10. Provides feedback if the guess is too hi
 Key concepts: `Math.random()`, conditionals, DOM updates, input validation.  
 Status: Completed 
 
-### 🔜 03. Todo List App 
+### ✅ 03. Todo List App 
 A basic task manager where you can add, view, and delete tasks.  
 Key concepts: Arrays, DOM manipulation, events, loops.  
-Status: Coming Soon!
+Status: Completed 
 
 ### 🔜 04. Counter App 
 Increment or decrement a counter with buttons, including a reset feature.  
