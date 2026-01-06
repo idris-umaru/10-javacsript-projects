@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo list App</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>ToDo List App</h1>
+        <p>manage your tasks efficiently</p>
+      </div>
+      <div class="main">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Enter a new task..."
+          autocomplete="off"
+        />
+        <button id="addTaskButton">Add Task</button>
+        <div class="stats">
+          <p id="taskCount">Total tasks: 0</p>
+        </div>
+        <ul id="taskList"></ul>
+      </div>
+      <button id="clearAllButton" class="clear-all hidden">
+        Clear All Task
+      </button>
+      <div class="footer">
+        <p>&copy; 2026 ToDo List App</p>
+      </div>
+    </div>
+    <script src="todo.js"></script>
+  </body>
 </html>
