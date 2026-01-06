@@ -11,7 +11,7 @@ These projects are perfect for demonstrating growth on GitHub and building a str
 ### ✅ 01. Calculator 
 A simple calculator that can perform addition, subtraction, multiplication, and division.  
 Key concepts: Input/output, event listeners, functions, type conversion.  
-Status: Completed
+Status: Completed 
 
 ### ✅ 02. Number Guessing Game 
 Guess a random number between 1 and 10. Provides feedback if the guess is too high or too low.  
@@ -21,7 +21,7 @@ Status: Completed
 ### 🔜 03. Todo List App 
 A basic task manager where you can add, view, and delete tasks.  
 Key concepts: Arrays, DOM manipulation, events, loops.  
-Status: Coming Soon
+Status: Coming Soon!
 
 ### 🔜 04. Counter App 
 Increment or decrement a counter with buttons, including a reset feature.  
