@@ -33,27 +33,27 @@ function increment() {
     updateDisplay();
 }
 
-// STEP 5: DECREMENT FUNCTION
+//  DECREMENT FUNCTION
 function decrement() {
     count--;
     updateDisplay();
 }
 
 
-// STEP 6: RESET FUNCTION
+//  RESET FUNCTION
 function reset() {
     count = 0;
     updateDisplay();
 }
 
-// STEP 7: EVENT LISTENERS
+//  EVENT LISTENERS
 
 incrementBtn.addEventListener('click', increment);
 decrementBtn.addEventListener('click', decrement);
 resetBtn.addEventListener('click', reset);
 
 
-// STEP 8: KEYBOARD SHORTCUTS (BONUS)
+// KEYBOARD SHORTCUTS 
 document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowUp') {
         increment();
