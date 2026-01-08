@@ -1,19 +1,13 @@
-// ============================================
-// STEP 1: GET DOM ELEMENTS
-// ============================================
-const incrementBtn = document.getElementById('increment'); // Fixed: lowercase
-const decrementBtn = document.getElementById('decrement'); // Fixed: lowercase
+
+const incrementBtn = document.getElementById('increment'); 
+const decrementBtn = document.getElementById('decrement'); 
 const resetBtn = document.getElementById('reset');
 const counterValue = document.getElementById('counterValue');
 
-// ============================================
-// STEP 2: INITIALIZE COUNTER
-// ============================================
+//INITIALIZE COUNTER
 let count = 0;
 
-// ============================================
-// STEP 3: FUNCTION TO UPDATE DISPLAY
-// ============================================
+// FUNCTION TO UPDATE DISPLAY 
 function updateDisplay() {
     counterValue.textContent = count;
     
@@ -33,40 +27,33 @@ function updateDisplay() {
     }
 }
 
-// ============================================
-// STEP 4: INCREMENT FUNCTION
-// ============================================
+// INCREMENT FUNCTION
 function increment() {
     count++;
     updateDisplay();
 }
 
-// ============================================
 // STEP 5: DECREMENT FUNCTION
-// ============================================
 function decrement() {
     count--;
     updateDisplay();
 }
 
-// ============================================
+
 // STEP 6: RESET FUNCTION
-// ============================================
 function reset() {
     count = 0;
     updateDisplay();
 }
 
-// ============================================
 // STEP 7: EVENT LISTENERS
-// ============================================
+
 incrementBtn.addEventListener('click', increment);
 decrementBtn.addEventListener('click', decrement);
 resetBtn.addEventListener('click', reset);
 
-// ============================================
+
 // STEP 8: KEYBOARD SHORTCUTS (BONUS)
-// ============================================
 document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowUp') {
         increment();
