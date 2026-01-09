@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.header{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.form-instruction{
+    color:#666;
+    font-size: 2rem;
+    padding-right: 50px;
+}
+.header h2 {
+    
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+
+}
+
+/*Form styles */
+.registrationForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+label{
+    color: #333;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+input{
+    padding: 20px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: all ease 0.3s;
+    outline: none;
+}
+input:focus{
+    border: #667eea;
+    box-shadow: 0 0 0 3px rgba(102,126,236, 0.1);
+}
+input:invalid{
+    border-color: 2px solid #e74c3c;
+    background-color: #ffe6e6;
+}
+input:valid{
+    border-color: #27ae60; 
+    background-color: #e6f9f0 ;
+
+}
+.error{
+    color: #e74c3c;
+    font-size:0.85rem;
+    min-height: 20px;
+    display: block;
+    font-weight: 500;
+
+
+}
+.sumbit-btn{
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+.sumbit-btn:hover{
+    transform: translate(-2px);
+    transition: 0 6px 20px rgba(102,126,234,0.4);
+}
+.sumbit-btn:active{
+    transform: translate(0);
+}
+.submit-btn:disabled {
+  background: linear-gradient(135deg, #ccc 0%, #999 100%);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+.message-sucess {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 2px solid #c3e6cb;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  animation: slideIn 0.5s ease;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.password-strength {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+.strength-bar {
+  height: 5px;
+  flex: 1;
+  background-color: #ddd;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.strength-bar.weak {
+  background-color: #e74c3c;
+}
+
+.strength-bar.medium {
+  background-color: #f39c12;
+}
+
+.strength-bar.strong {
+  background-color: #27ae60;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Loading State for Button */
+.submit-btn.loading {
+  position: relative;
+  color: transparent;
+}
+
+.submit-btn.loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

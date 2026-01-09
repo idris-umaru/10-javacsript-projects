@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"><h2>This is Simple Form Validation</h2></div>
+      <p class="form-instruction">Fill out the Form below with valid Information</p>
+    </div>
+    <form class="registrationForm" id="registration-form">
+      <div class="form-group">
+        <label for="username">Full Name: </label>
+        <input
+          type="text"
+          id="userName"
+          name="name"
+          required
+          autocomplete="off"
+          placeholder="Enter your Full Name"
+        />
+        <span class="error" id="nameError"></span>
+      </div>
+      <div class="form-group">
+        <label for="userEmail">Email Address: </label>
+        <input
+          type="email"
+          id="userEmail"
+          name="email"
+          required
+          placeholder="example@Gamil.com"
+          aria-describedby="emailError"
+        />
+        <span id="emailError" class="error" aria-live="polite"></span>
+      </div>
+      <div class="form-group">
+        <label for="userPassword">Password:(min 8 characters )</label>
+        <input
+          type="password"
+          id="userPassword"
+          name="password"
+          required
+          placeholder="Enter Password"
+        />
+        <span class="error" id="passwordError"></span>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password: </label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          required
+          placeholder="Re-Enter password"
+          autocomplete="off"
+        />
+        <span class="error" id="confirmPasswordError"></span>
+      </div>
+      <!--Phone Number Field-->
+      <div class="form-group">
+        <label for="userPhone">Phone Number: </label>
+        <input
+          type="tel"
+          id="userPhone"
+          name="Phone"
+          pattern="[0-9]{10}"
+          placeholder="0123456789"
+          aria-describedby="phoneError"
+        />
+        <span id="phoneError" class="error" aria-live="polite"></span>
+      </div>
+      <!--Age Field-->
+      <div class="form-group">
+        <label for="userAge">Age: {18-99}</label>
+        <input
+          type="number"
+          id="userAge"
+          name="age"
+          min="18"
+          max="99"
+          aria-describedby="ageError"
+        />
+        <span class="error" id="ageError"></span>
+      </div>
+      <button type="submit" class="sumbit-btn">Register</button>
+    </form>
+    <div class="message-sucess hidden"  id="sucessMessage">
+      Form submitted sucessfully!
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
