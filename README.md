@@ -23,15 +23,15 @@ A basic task manager where you can add, view, and delete tasks.
 Key concepts: Arrays, DOM manipulation, events, loops.  
 Status: Completed 
 
-### 🔜 04. Counter App 
+### ✅ 04. Counter App 
 Increment or decrement a counter with buttons, including a reset feature.  
 **Key concepts:** Variables, state management, event listeners, DOM updates.  
-Status: Coming Soon
+Status: Completed
 
-### 🔜 05. Form Validation App 
+### ✅ 05. Form Validation App 
 Validates user input for forms, ensuring proper values are entered before submission.  
 Key concepts: Forms, validation, event handling, error messages.  
-Status: Coming Soon
+Status: Completed 
 
 ### 🔜 06. Password Strength Checker 
 Checks the strength of a password and gives feedback (weak, medium, strong).  
