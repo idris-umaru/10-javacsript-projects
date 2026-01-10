@@ -59,7 +59,7 @@ input:focus{
     box-shadow: 0 0 0 3px rgba(102,126,236, 0.1);
 }
 input:invalid{
-    border-color: 2px solid #e74c3c;
+    border-color:  #e74c3c;
     background-color: #ffe6e6;
 }
 input:valid{
