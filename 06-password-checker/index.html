@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Password Strength Checker</h2>
+        <p>checks how strong your password is</p>
+      </div>
+      <div class="password-checker">
+        <div class="input-group">
+          <label for="userPassword">Enter Password: </label>
+          <input
+            type="password"
+            id="userPassword"
+            class="password-input"
+            name="password"
+            autocomplete="off"
+            placeholder="Enter your Password"
+            required
+          />
+        </div>
+        <div class="ShowPassword">
+          <input type="checkbox" id="toggle-password" class="toggle-checkbox" />
+          <label for="toggle-password">Showpassword: </label>
+        </div>
+        <div class="strength-meter">
+          <div class="strength-bar" id="strength-bar"></div>
+          <p id="strength-text" class="strength-message">
+            Enter Password to check strenght
+          </p>
+          <div class="requirements">
+            <h3>Password Requirements</h3>
+            <ul id="feedback-list" class="feedback-list">
+              <li id="req-length" class="feedback-item">
+                <span class="icon">x</span>At least 8 characters
+              </li>
+              <li id="req-uppercase" class="feedback-item">
+                <span class="icon">x</span>Contains UpperCase letters (A-Z)
+              </li>
+              <li id="req-lowercase" class="feedback-item">
+                <span class="icon">x</span>Contains LowerCase Letters (a-z)
+              </li>
+              <li id="req-number" class="feedback-item">
+                <span class="icon">X</span>
+                Contains a Number (0-9)
+              </li>
+              <li id="req-special" class="feedback-item">
+                <span class="icon">x</span>
+                contains special characters (!@#$%)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

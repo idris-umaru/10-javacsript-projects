@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.header P {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.password-checker {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-group label {
+  color: #333;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.password-input {
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.password-input:focus {
+  border-color: #667eea;
+  box-shadow: 0, 0, 0, 3px rgba(102, 126, 234, 0.1);
+}
+
+.ShowPassword {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.toggle-checkbox {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+}
+.ShowPassword label {
+  color: #333;
+  font-size: 15px;
+  padding: 15px;
+  user-select: none;
+}
+
+.strength-meter {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.strength-bar {
+  height: 100%;
+  width: 0%;
+  transition: all 0.4s ease;
+  border-radius: 8px;
+}
+
+.strength-bar.weak {
+  width: 25%;
+  background: linear-gradient(90deg, #e74c3c, #c0392b);
+}
+
+.strength-bar.fair {
+  width: 50%;
+  background: linear-gradient(90deg, #f39c12, #e67e22);
+}
+.strength-bar.good {
+  width: 75%;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+}
+
+.strength-bar.strong {
+  width: 100%;
+  background: linear-gradient(95deg, #27ae60, #229954);
+}
+
+.strength-message {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 20px;
+  min-height: 10px;
+  transition: all 0.3s ease;
+}
+
+.strength-message.weak {
+  color: #e74c3c;
+}
+.strength-message.fair {
+  color: #f39c12;
+}
+
+.strength-message.good {
+  color: #3498db;
+}
+.strength-message.strong {
+  color: #27ae60;
+}
+
+.requirements {
+  margin-top: 20px;
+}
+.requirements h3 {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+.feedback-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.feedback-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  color: #666;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+.feedback-item .icon {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #e74c3c;
+  min-width: 20px;
+  text-align: center;
+}
+.feedback-item.valid {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Animation for valid items */
+@keyframes checkmark {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.feedback-item.valid .icon {
+  animation: checkmark 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .password-input {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
