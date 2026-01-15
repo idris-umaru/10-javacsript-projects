@@ -10,14 +10,11 @@ const reqUppercase = document.getElementById('req-uppercase');
 const reqLowercase = document.getElementById('req-lowercase');
 const reqNumber = document.getElementById('req-number');
 const reqSpecial = document.getElementById('req-special');
-
-
 //  FUNCTION TO CHECK PASSWORD STRENGTH
 
-
-/**
- * Calculate password strength based on criteria
- * Returns: { score: 0-5, strength: 'weak'|'fair'|'good'|'strong', feedback: {} }
+/*
+ *Calculate password strength based on criteria
+ Returns: { score: 0-5, strength: 'weak'|'fair'|'good'|'strong', feedback: {} }
  */
 
   function checkPasswordStrength(password) {
@@ -64,12 +61,10 @@ const reqSpecial = document.getElementById('req-special');
 
     return {
         score,
-        strength,   // ✅ THIS WAS MISSING BEFORE
+        strength,   
         feedback
     };
 }
-
-
 
 /**
  * Update the visual indicators (bar, text, checklist)
