@@ -33,10 +33,10 @@ Validates user input for forms, ensuring proper values are entered before submis
 Key concepts: Forms, validation, event handling, error messages.  
 Status: Completed 
 
-### 🔜 06. Password Strength Checker 
+### ✅ 06. Password Strength Checker 
 Checks the strength of a password and gives feedback (weak, medium, strong).  
 Key concepts: Strings, conditionals, real-time input handling.  
-Status: Coming Soon
+Status: Completed 
 
 ### 🔜 07. Random Quote Generator 
 Displays a random quote with the author's name every time a button is clicked.  
