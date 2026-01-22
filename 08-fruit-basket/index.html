@@ -1,18 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fruit Basket app</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Basket App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <div class="container">
-      <div class="header">
-        <h1>This is a fruit Basket app</h1>
-        <p>Please enter a fruit name</p>
-      </div>
-      
+        <h1>🧺 Fruit Basket</h1>
+        
+        <div class="fruit-list">
+            <h2>Available Fruits</h2>
+            <div class="fruits" id="available-fruits">
+                <div class="fruit-item" data-fruit="apple">
+                    <span class="fruit-icon">🍎</span>
+                    <span class="fruit-name">Apple</span>
+                    <button class="add-btn">Add</button>
+                </div>
+                <div class="fruit-item" data-fruit="banana">
+                    <span class="fruit-icon">🍌</span>
+                    <span class="fruit-name">Banana</span>
+                    <button class="add-btn">Add</button>
+                </div>
+                <div class="fruit-item" data-fruit="orange">
+                    <span class="fruit-icon">🍊</span>
+                    <span class="fruit-name">Orange</span>
+                    <button class="add-btn">Add</button>
+                </div>
+                <div class="fruit-item" data-fruit="grape">
+                    <span class="fruit-icon">🍇</span>
+                    <span class="fruit-name">Grape</span>
+                    <button class="add-btn">Add</button>
+                </div>
+                <div class="fruit-item" data-fruit="strawberry">
+                    <span class="fruit-icon">🍓</span>
+                    <span class="fruit-name">Strawberry</span>
+                    <button class="add-btn">Add</button>
+                </div>
+                <div class="fruit-item" data-fruit="watermelon">
+                    <span class="fruit-icon">🍉</span>
+                    <span class="fruit-name">Watermelon</span>
+                    <button class="add-btn">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="basket-section">
+            <h2>My Basket</h2>
+            <div class="basket" id="basket">
+                <p class="empty-message">Your basket is empty. Add some fruits!</p>
+            </div>
+            <div class="basket-controls">
+                <button id="clear-basket" class="clear-btn">Clear Basket</button>
+                <div class="basket-count">
+                    Total Fruits: <span id="fruit-count">0</span>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+
+    <script src="script.js" defer></script>
+</body>
 </html>
