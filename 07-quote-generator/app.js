@@ -32,8 +32,6 @@ const generateQuote = function() {
     quoteText.style.fontSize = '30px'
 }
 
-//Function to tweet the current quote
-
 // Function to tweet the current quote
 function tweetQuote() {
     const currentQuote = quoteText.textContent;
