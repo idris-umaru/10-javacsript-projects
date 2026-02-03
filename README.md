@@ -56,12 +56,11 @@ Add fruits to a basket, view the basket, and count total items.
 Key concepts: Arrays, push/remove, display data.  
 Status: Completed
 
-### 🔜 09. Simple Quiz App
+### ✅ 09. Simple Quiz App
 
 A mini quiz app with multiple questions and score tracking.  
 Key concepts: Objects, conditional logic, flow control, score tracking.  
-Status: Coming Soon
-
+Status: Completed
 ### 🔜 10. Expense Tracker
 
 Track expenses by adding name and amount, display all expenses and total amount.  
