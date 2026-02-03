@@ -1,55 +1,56 @@
-//An Array of Quiz Questions and Answers 
+//Quiz App javascript Code 
 document.addEventListener('DOMContentLoaded',()=>{
-    console.log('Quiz App loaded');
+    console.log('Quiz App loaded successfully');
 })
 
+//An Array of Quiz Questions and Answers 
 const quizData = [
     {
         question: 'what does WWW stand for in a website browser?',
-        Options: [
+        options: [
             'World wide web',
             'Wild wide web',
             'Wide world web',
             'World wide war'
-        ], answer: 0
+        ], correct: 0
         
         
     },
     {
         question: 'which programming language is named after a coffee?',
-        Options: [
+        options: [
             'Java',
             'JavaScript',
             'C++',
             'Python'
-        ], answer: 1
+        ], correct: 1
     },
     {
         question: 'which company developed the react Library?',
-        Options: [
+        options: [
             'Google',
             'Microsoft',
             'Facebook',
             'Apple'
-        ], answer: 2
+        ], correct: 2
     },
     {
         question: 'How many colors are there in a rainbow?',
-        Options: [
+        options: [
             '5',
             '6',
             '7',    
             '8'
-        ], answer: 2
+        ], correct: 2
     },
     {
         question: 'what is the capital of france?',
-        Options: [
+        options: [
             'Berlin',   
             'Madrid',
             'Paris',
             'Lisbon'
-        ], answer: 2
+        ], correct: 2
         
     },
  {
@@ -109,7 +110,7 @@ let selectedAnswer = null;
 
 
 //Function to start the quiz 
-function startQuiz (){
+function initQuiz (){
     currentQuestion = 0;
     score = 0;
     selectedAnswer = null;
