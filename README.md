@@ -61,12 +61,11 @@ Status: Completed
 A mini quiz app with multiple questions and score tracking.  
 Key concepts: Objects, conditional logic, flow control, score tracking.  
 Status: Completed
-### 🔜 10. Expense Tracker
+### ✅ 10. Expense Tracker
 
 Track expenses by adding name and amount, display all expenses and total amount.  
 Key concepts: Arrays of objects, calculations, DOM updates.  
-Status: Coming Soon
-
+Status: Completed
 ---
 
 ## Technologies Used
